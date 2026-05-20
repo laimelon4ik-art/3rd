@@ -20,25 +20,22 @@ i{
     font-size: 20px;
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-
-.top {
+ .topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 10px;
+  z-index: 1000;
+
 }
 
-
-
-
 .logo {
-  width: 150px !important;
-  height: 150px !important;
-  max-width: none !important;
+  width: 10%;
+  height: auto;
 }
 
 </style>
@@ -50,54 +47,43 @@ i{
 </head>
 <body>
 
-    
      
     
 
-   <div style="display: flex; justify-content: center; position: relative; top: 5%; justify-content: space-between;">
-         
-        
-<div style="display: flex; justify-content: center; position: relative; ">
-         <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/SMTH.html'">projects</button>
-   </div>
 
-   <div style="display: flex; justify-content: center; position: relative; top: 10px;">
-         <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/comeon.html'">service</button>
-   </div>
 
-   <div style="display: flex; justify-content: center; position: relative; top: 10px;">
-         <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/new.html'">contact</button>
-   </div>
 
-   <div style="display: flex; justify-content: center; position: relative; top: 10px;">
-         <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/hi.html'">about</button>
-   </div>
+
+
+
+
+
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%; top: 0%;">
+ <div style="margin-top: 60px;">
+  <a href="SMTH.html" class="w3-bar-item w3-button" >Projects</a>
+<a href="comeon.html" class="w3-bar-item w3-button">Service</a>
+<a href="new.html" class="w3-bar-item w3-button">Contact</a>
+<a href="hi.html" class="w3-bar-item w3-button">About</a>
 </div>
-
-
-
-
-
-
-
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
-  <h3 class="w3-bar-item">Menu</h3>
-    <a href="#" class="w3-bar-item w3-button" <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/SMTH.html'">projects</button></a>
-  <a href="#" class="w3-bar-item w3-button" <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/comeon.html'">service</button></a>
-  <a href="#" class="w3-bar-item w3-button" <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/new.html'">contact</button></a>
-  <a href="#" class="w3-bar-item w3-button" <button onclick="window.location.href=' https://laimelon4ik-art.github.io/3rd/hi.html'">about</button></a>
-  </div>
-
+</div>
 
 
  
   
- <div style="margin: left 35%">
+ <div style="margin: left 35%"></div>
 
-<div class="w3-container w3-teal">
- 
-<img src="favicon-removebg-preview.png" alt="logo" class="logo"></div>
-   
+   <div class="w3-containerl">
+       <h1>My Page</h1>
+   </div>
+
+   <div class="w3-container"></div>
+
+
+<div class="topbar">
+  <img src="favicon-removebg-preview.png" class="logo">
+</div>
+
+
 
 
 </body>
