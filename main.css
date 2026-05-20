@@ -1,16 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i {
+    font-size: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Mobile (phones) ===== */
+
 @media (max-width: 600px) {
 
     h1 {
         font-size: 24px;
+        text-align: center;
     }
 
     button {
         width: 80%;
         font-size: 18px;
+        display: block;
+        margin: 10px auto;
     }
 
     i {
         font-size: 50px;
+        display: block;
+        text-align: center;
     }
-  
+
 }
