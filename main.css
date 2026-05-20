@@ -9,7 +9,6 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* TOP BAR */
 .topbar {
   position: fixed;
   top: 0;
@@ -28,22 +27,33 @@ html, body {
   width: auto;
 }
 
-/* SIDEBAR (desktop only) */
 .w3-sidebar {
   width: 200px;
   position: fixed;
   top: 50px;
   left: 0;
   height: 100%;
+  overflow-x: hidden;
+  padding-top: 10px;
 }
 
-/* CONTENT */
+.w3-bar-item {
+  width: 100%;
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
 body {
   margin-left: 200px;
   padding-top: 60px;
 }
 
-/* MOBILE */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 600px) {
 
   .w3-sidebar {
@@ -56,4 +66,11 @@ body {
     margin-left: 0;
   }
 
+  .w3-bar-item {
+    text-align: center;
+  }
+
+  .topbar {
+    justify-content: center;
+  }
 }
