@@ -9,21 +9,7 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* Sidebar (desktop) */
-.w3-sidebar {
-  width: 15%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-/* Push page content to the right */
-body {
-  margin-left: 15%;
-}
-
-/* Top bar */
+/* TOP BAR */
 .topbar {
   position: fixed;
   top: 0;
@@ -42,22 +28,23 @@ body {
   width: auto;
 }
 
-/* Images always fit screen */
-img {
-  max-width: 100%;
-  height: auto;
+/* SIDEBAR (desktop only) */
+.w3-sidebar {
+  width: 200px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* CONTENT */
+body {
+  margin-left: 200px;
+  padding-top: 60px;
+}
 
+/* MOBILE */
 @media (max-width: 600px) {
-
-  body {
-    margin-left: 0;
-    padding-top: 60px;
-  }
 
   .w3-sidebar {
     width: 100% !important;
@@ -65,11 +52,8 @@ img {
     height: auto !important;
   }
 
-  .topbar {
-    height: 50px;
+  body {
+    margin-left: 0;
   }
 
-}
-* {
-  outline: 1px solid red;
 }
