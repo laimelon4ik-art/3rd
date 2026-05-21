@@ -9,65 +9,82 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* Top icon */
+
+
 .topbar {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 15px;
+
   z-index: 1000;
 }
 
+
+
 .logo {
-  height: 32px;
+  height: 55px;
   width: auto;
   display: block;
 }
 
-/* Sidebar */
+
+
 .w3-sidebar {
   width: 200px;
+  height: 100%;
+
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+
   overflow-x: hidden;
-  padding-top: 60px;
+
+  padding-top: 70px;
 }
 
-/* Sidebar buttons */
+
+
 .w3-bar-item {
   width: 100%;
   display: block;
   white-space: normal;
 }
 
-/* Main page spacing */
+
+
 body {
   margin-left: 200px;
 }
 
-/* Images responsive */
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Mobile */
+
+
 @media (max-width: 600px) {
 
   body {
-    margin-left: 0;
+    margin-left: 120px;
   }
 
   .w3-sidebar {
-    width: 100% !important;
-    position: relative !important;
-    height: auto !important;
-    padding-top: 60px;
+    width: 120px !important;
   }
 
-  .w3-bar-item {
-    text-align: center;
+  .logo {
+    height: 45px;
   }
 
 }
