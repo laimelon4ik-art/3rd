@@ -75,22 +75,26 @@ img {
 
 @media (max-width: 600px) {
 
-  body {
-    margin-left: 80px;
+  .w3-sidebar {
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    overflow: hidden !important;
   }
 
-  .w3-sidebar {
-    width: 80px !important;
+  body {
+    margin-left: 70px !important;
   }
 
   .w3-bar-item {
-    font-size: 12px;
-    padding: 8px 4px;
-    overflow: hidden;
+    font-size: 10px !important;
+    padding: 6px 2px !important;
+    text-align: center;
+    white-space: normal;
   }
 
   .logo {
-    height: 45px;
+    height: 40px;
   }
 
 }
