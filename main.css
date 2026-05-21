@@ -83,6 +83,12 @@ img {
     width: 80px !important;
   }
 
+  .w3-bar-item {
+    font-size: 12px;
+    padding: 8px 4px;
+    overflow: hidden;
+  }
+
   .logo {
     height: 45px;
   }
