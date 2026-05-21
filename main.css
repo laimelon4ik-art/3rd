@@ -76,11 +76,11 @@ img {
 @media (max-width: 600px) {
 
   body {
-    margin-left: 120px;
+    margin-left: 80px;
   }
 
   .w3-sidebar {
-    width: 120px !important;
+    width: 80px !important;
   }
 
   .logo {
