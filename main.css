@@ -39,17 +39,14 @@ html, body {
 
 .w3-sidebar {
   width: 200px;
-  height: 100%;
+  height: calc(100% - 70px);
 
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
 
   overflow-x: hidden;
-
-  padding-top: 70px;
 }
-
 
 
 .w3-bar-item {
@@ -75,12 +72,14 @@ img {
 
 @media (max-width: 600px) {
 
-  .w3-sidebar {
-    width: 70px !important;
-    min-width: 70px !important;
-    max-width: 70px !important;
-    overflow: hidden !important;
-  }
+ .w3-sidebar {
+  width: 70px !important;
+  min-width: 70px !important;
+  max-width: 70px !important;
+
+  top: 50px !important;
+  height: calc(100% - 50px) !important;
+}
 
   body {
     margin-left: 70px !important;
