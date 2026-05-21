@@ -97,4 +97,9 @@ img {
   height: 28px;
   width: auto;
 }
+
+.topbar {
+  padding-left: 5px;
+  height: 50px;
+}
 }
