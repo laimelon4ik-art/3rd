@@ -1,11 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projects</title>
-</head>
-<body>
-<a href="index.html">Back</a>
-</body>
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      /* === ONLY FOR PROJECTS PAGE === */
+      .projects-page .image-container {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+      }
+
+      .projects-page .image-item {
+        flex: 1;
+        min-width: 300px;
+        position: relative; /* ← Required for overlay positioning */
+      }
+
+      .projects-page .image-item img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 4px;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      /* === OVERLAY STYLES === */
+      .projects-page .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      .projects-page .image-item:hover .image-overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .projects-page .image-item:hover img {
+        transform: scale(1.03);
+      }
+
+      .projects-page .view-btn {
+        padding: 12px 30px;
+        background-color: #860000;
+        color: white;
+        border: 2px solid white;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .projects-page .view-btn:hover {
+        background-color: white;
+        color: #860000;
+        transform: translateY(-2px);
+      }
+
+      /* === INFO TEXT === */
+      .projects-page .image-info {
+        margin-top: 15px;
+      }
+
+      .projects-page .image-info h4 {
+        margin: 0 0 8px 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .projects-page .image-info .location,
+      .projects-page .image-info .year {
+        margin: 4px 0;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <div class="nav-links">
+        <a class="active" href="index.html">main</a>
+        <a href="comeon.html">Service</a>
+        <a href="new.html">Contact</a>
+        <a href="hi.html">About</a>
+      </div>
+    </div>
+
+    <h1 style="display: flex; justify-content: center">
+      MODERN ARCHITECTURE PROJECTS
+    </h1>
+
+    <div class="projects-page">
+      <!-- First Row -->
+      <div class="image-container">
+        <!-- Image 1 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/12379124/pexels-photo-12379124.jpeg"
+            alt="Geometric Pavilion"
+          />
+          <div class="image-overlay">
+            <a href="wassup.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Geometric Sunset Pavilion</h4>
+            <p class="location">📍 Cleveland, Ohio, USA</p>
+            <p class="year">📅 2022</p>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/30959557/pexels-photo-30959557.jpeg"
+            alt="Bell Works Atrium"
+          />
+          <div class="image-overlay">
+            <a href="how.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Bell Works Atrium</h4>
+            <p class="location">📍 Holmdel, New Jersey, USA</p>
+            <p class="year">📅 2025</p>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/18273285/pexels-photo-18273285.jpeg"
+            alt="Urban Residence"
+          />
+          <div class="image-overlay">
+            <a href="goodday.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Contemporary Urban Residence</h4>
+            <p class="location">📍 Urban District</p>
+            <p class="year">📅 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="image-container">
+        <!-- Image 4 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/7209222/pexels-photo-7209222.jpeg"
+            alt="Minimalist Gallery"
+          />
+          <div class="image-overlay">
+            <a href="idk.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Minimalist Gallery Space</h4>
+            <p class="location">📍 Singapore</p>
+            <p class="year">📅 2021</p>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/29078961/pexels-photo-29078961.jpeg"
+            alt="Concrete Sanctuary"
+          />
+          <div class="image-overlay">
+            <a href="wha.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Serene Concrete Sanctuary</h4>
+            <p class="location">📍 Japan</p>
+            <p class="year">📅 2024</p>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="image-item">
+          <img
+            src="https://images.pexels.com/photos/31640029/pexels-photo-31640029.jpeg"
+            alt="Urban Tower"
+          />
+          <div class="image-overlay">
+            <a href="yooooo.html" class="view-btn">open</a>
+          </div>
+          <div class="image-info">
+            <h4>Urban Academic Center</h4>
+            <p class="location">📍 Coventry, United Kingdom</p>
+            <p class="year">📅 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
