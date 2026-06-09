@@ -1,24 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service</title>
-    <link rel="stylesheet" href="main.css" />
-     <style>
-      body {
-        background-color: #f5f5f5;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services </title>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+      body {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      
+      .topnav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 60px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      .logo {
+        height: 60px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #860000;
+        font-weight: 500;
+        padding: 6px 8px;
+        transition: 0.3s;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        background: rgba(134, 0, 0, 0.1);
+        border-radius: 6px;
+      }
+
+      
+      .services-header {
+        text-align: center;
+        padding: 80px 20px 40px;
+      }
+      .services-header h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: #111;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+      }
+      .services-header p {
+        font-size: 1.15rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 35px;
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 20px 40px 80px;
+      }
+
+      
+      .service-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+      .service-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+      .service-content {
+        padding: 28px 24px;
+      }
+      .service-content h3 {
+        font-size: 1.4rem;
+        color: #111;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .service-content p {
+        font-size: 0.98rem;
+        color: #555;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      
+      .services-cta {
+        text-align: center;
+        padding: 60px 20px 90px;
+        background: #fff;
+      }
+      .services-cta h2 {
+        font-size: 2rem;
+        color: #111;
+        margin-bottom: 15px;
+      }
+      .services-cta p {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 16px 38px;
+        background: #860000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      .cta-button:hover {
+        background: #660000;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(134, 0, 0, 0.3);
+      }
+
+      
     </style>
-</head>
-<body>
-     <div class="topnav">
+  </head>
+  <body>
+    
+    <div class="topnav">
+    
       <div class="nav-links">
-        <a class="active" href="index.html">main</a>
-        <a href="comeon.html">Service</a>
+        <a href="index.html">main</a>
+        <a href="SMTH.html">Projects</a>
         <a href="new.html">Contact</a>
         <a href="hi.html">About</a>
       </div>
     </div>
-</body>
+
+    
+    <div class="services-header">
+      <h1>Our Services</h1>
+      <p>
+        Comprehensive architectural solutions tailored to your vision, from
+        concept to completion.
+      </p>
+    </div>
+
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <img
+          src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+          alt="Architectural Design"
+        />
+        <div class="service-content">
+          <h3>Architectural Design</h3>
+          <p>
+            Innovative residential and commercial designs that blend
+            functionality with striking aesthetics. We guide every project from
+            initial sketches to final construction documentation.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg"
+          alt="Sustainable Building"
+        />
+        <div class="service-content">
+          <h3>Sustainable Building</h3>
+          <p>
+            Eco-conscious architecture focused on energy efficiency, certified
+            green materials, and lifecycle-conscious design that reduces
+            environmental impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg"
+          alt="Interior Planning"
+        />
+        <div class="service-content">
+          <h3>Interior Planning</h3>
+          <p>
+            Human-centered spatial layouts that maximize comfort and flow. We
+            integrate material selection, lighting strategies, and modern
+            finishes for cohesive interiors.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="https://images.pexels.com/photos/33747710/pexels-photo-33747710.png"
+          alt="3D Rendering"
+        />
+        <div class="service-content">
+          <h3>3D Rendering</h3>
+          <p>
+            Photorealistic visualizations and virtual walkthroughs that bring
+            your project to life before construction begins, ensuring perfect
+            stakeholder alignment.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img
+          src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg"
+          alt="Project Management"
+        />
+        <div class="service-content">
+          <h3>Project Management</h3>
+          <p>
+            End-to-end coordination, timeline optimization, and
+            cross-disciplinary team leadership to keep your build on schedule,
+            on budget, and to the highest standards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <h2>Ready to start your project?</h2>
+      <p>Let's discuss how we can bring your architectural vision to life.</p>
+      <a href="new.html" class="cta-button">Contact Us →</a>
+    </div>
+  </body>
 </html>
