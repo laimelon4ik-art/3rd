@@ -164,9 +164,7 @@ body {
     flex-direction: column;
   
   }
-  body {
-    background-image: cover;
-  }
+  
   .nav-links {
 align-items: center;
 justify-content: center;
